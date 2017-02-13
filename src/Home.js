@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import './App.css';
+import "./App.css";
+import HorizontalMarquee from "./HorizontalMarquee.js"
 
 class Home extends Component {
 
@@ -35,15 +36,17 @@ function randomize(list, randomized=[]) {
     return randomize(remaining, randomized.concat([pick]));
 }
 
-console.log("here " , randomize(imgsToDisplay));
 var randomizedArray = randomize(imgsToDisplay);
 
 return (
 
+
     <div className="photo-content">
+
           {randomizedArray.map((ele) =>
-            <div>
+            <div key={ele.key}>
             <img src={ele.source} />
+            <HorizontalMarquee />
             </div>
           )}
         </div>

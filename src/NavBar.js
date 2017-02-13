@@ -9,6 +9,7 @@ class NavBar extends Component {
     <div className="NavBarHeader">
       <button>{"https://vimeo.com/193859081"}</button>
       <button>{"https://vimeo.com/115724046"}</button>
+      <button>aliciamersy@gmail.com</button>
     </div>
     );
   }
