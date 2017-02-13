@@ -1,4 +1,18 @@
 .NavBarHeader{
   width : 100%;
   z-index: 2;
+  position: fixed;
+}
+
+.photo-content img{
+  width: 100vw;
+}
+
+.bigImgs{
+  width: 100vw;
+}
+
+
+body{
+  background-color: black;
 }
