@@ -7,11 +7,10 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+          <img src="https://res.cloudinary.com/www-c-t-l-k-com/image/upload/v1486235687/a8_lyrjwo.png" />
           <h2>Welcome to React</h2>
         </div>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
         </p>
       </div>
     );
