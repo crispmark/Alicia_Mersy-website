@@ -1,20 +1,16 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Router, Route, Link } from 'react-router';
+import NavBar from './NavBar.js'
+
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <img src="https://res.cloudinary.com/www-c-t-l-k-com/image/upload/v1486235687/a8_lyrjwo.png" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-        </p>
-      </div>
-    );
-  }
+    render() {
+        return(
+            <div className="full-page">
+              <NavBar></NavBar>
+            </div>
+            )
+    }
 }
 
 export default App;
