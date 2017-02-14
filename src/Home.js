@@ -41,11 +41,13 @@ var randomizedArray = randomize(imgsToDisplay);
 return (
 
 
-    <div className="photo-content">
+    <div >
 
           {randomizedArray.map((ele) =>
             <div key={ele.key}>
+            <div className="photo-content">
             <img src={ele.source} />
+            </div>
             <HorizontalMarquee />
             </div>
           )}
