@@ -28,5 +28,6 @@ body{
 }
 
 .marquee img{
-  height: 20%;
+  height: 10vh;
+  padding-right: 2vw;
 }

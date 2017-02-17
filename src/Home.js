@@ -42,15 +42,15 @@ return (
 
 
     <div >
-
           {randomizedArray.map((ele) =>
             <div key={ele.key}>
             <div className="photo-content">
             <img src={ele.source} />
             </div>
-            <HorizontalMarquee />
+              <HorizontalMarquee></HorizontalMarquee>
             </div>
           )}
+
         </div>
     );
 
