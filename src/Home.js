@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
 import "./App.css";
 import HorizontalMarquee from "./HorizontalMarquee.js"
+import Watch from "./ScrollMonitor.js"
+
 
 class Home extends Component {
 
 
+
 render() {
+
+
 
 let imgsToDisplay = [
   { key: 1, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/v1487026121/background_1_vqjmfz.jpg"},
