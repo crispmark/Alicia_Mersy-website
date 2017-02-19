@@ -3,6 +3,18 @@ body{
 }
 
 
+.typeWritter{
+  font-size: 6.5vw;
+  color: white;
+  position: absolute;
+  top: 220vw;
+  width: 100%;
+  text-align: center;
+  z-index: 100;
+
+}
+
+
 .FixedComponents1{
   opacity: 0.9;
   z-index: 3;
