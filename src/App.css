@@ -3,7 +3,7 @@ body{
 }
 
 
-.FixedComponents{
+.FixedComponents1{
   opacity: 0.9;
   z-index: 3;
   overflow-y: scroll;
@@ -15,25 +15,85 @@ body{
   left: 1vw;
   transform: rotate(2deg);
   box-shadow: 6px 10px 17px 0px white;
-  -webkit-animation: FixedComponents 10s infinite;
-  animation: FixedComponents 10s infinite;
+  -webkit-animation: FixedComponents1 10s infinite;
+  animation: FixedComponents1 10s infinite;
+}
+
+
+.FixedComponents1 p{
+  font-weight: lighter;
+}
+
+.FixedComponents1 img{
+  width: 80%;
+  padding-left: 2%;
 }
 
 /* Safari 4.0 - 8.0 */
-@-webkit-keyframes FixedComponents {
+@-webkit-keyframes FixedComponents1 {
     from {left: 10vw;}
     to {left: 20vw;}
 }
 
-@keyframes FixedComponents {
+@keyframes FixedComponents1 {
   from {left: 10vw;}
   to {left: 20vw;}
 }
 
 
-.FixedComponents h1{
+.FixedComponents1 h1{
   color: white;
 }
+
+
+
+
+.FixedComponents2{
+  opacity: 0.9;
+  z-index: 10;
+  overflow-y: scroll;
+  width: 60vw;
+  height: 20vw;
+  background-color: white;
+  position: absolute;
+  top: 140vw;
+  right: 30vw;
+  transform: rotate(2deg);
+  box-shadow: 6px 10px 17px 0px white;
+  -webkit-animation: FixedComponents2 4s infinite;
+  animation: FixedComponents2 4s infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes FixedComponents2 {
+    from {right: 10vw;}
+    to {right: 20vw;}
+}
+
+@keyframes FixedComponents2 {
+  from {right: 10vw;}
+  to {right: 20vw;}
+}
+
+
+
+.FixedComponents3{
+  opacity: 0.9;
+  z-index: 10;
+  overflow-y: scroll;
+  width: 60vw;
+  height: 20vw;
+  background-color: white;
+  position: absolute;
+  top: 400vw;
+  right: 70vw;
+  transform: rotate(2deg);
+  box-shadow: 6px 10px 17px 0px white;
+  -webkit-animation: FixedComponents3 4s infinite;
+  animation: FixedComponents3 4s infinite;
+}
+
+
 
 .marquee{
   color: white;
