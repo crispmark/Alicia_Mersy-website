@@ -23,9 +23,8 @@ let imgsToDisplay = [
   { key: 8, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/v1487026140/background_8_lo0vze.jpg"},
   { key: 9, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/v1487026130/background_9_bezdbv.jpg"},
   { key: 10, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/v1487026133/background_10_cnai6t.jpg"},
-  { key: 11, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/v1487026138/background_14_ds1s1k.png"},
-  { key: 12, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/v1487026138/background_18_vcwlmd.png"},
-  { key: 13, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/v1487026129/background_11_x5ob78.jpg"},
+  { key: 11, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/v1487026138/background_18_vcwlmd.png"},
+  { key: 12, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/v1487026129/background_11_x5ob78.jpg"},
 
 ];
 

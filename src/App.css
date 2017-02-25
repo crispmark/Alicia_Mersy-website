@@ -7,7 +7,6 @@ body{
   font-size: 6.5vw;
   color: white;
   position: absolute;
-  top: 220vw;
   width: 100%;
   text-align: center;
   z-index: 100;
@@ -19,11 +18,11 @@ body{
   opacity: 0.9;
   z-index: 3;
   overflow-y: scroll;
-  width: 30vw;
+  width: 34vw;
   height: 46vw;
   background-color: white;
   position: absolute;
-  top: 3vw;
+  top: 5vw;
   left: 1vw;
   transform: rotate(2deg);
   box-shadow: 6px 10px 17px 0px white;
@@ -34,11 +33,18 @@ body{
 
 .FixedComponents1 p{
   font-weight: lighter;
+  margin: 2%;
+}
+
+.FixedComponents1 span{
+  color: black;
+  background-color: #00FF7F;
 }
 
 .FixedComponents1 img{
   width: 80%;
-  padding-left: 2%;
+  margin-left: 2%;
+  border: 1px dotted black;
 }
 
 /* Safari 4.0 - 8.0 */
@@ -53,59 +59,140 @@ body{
 }
 
 
-.FixedComponents1 h1{
-  color: white;
+.FixedComponents1:hover{
+  -webkit-animation-play-state: paused;
+   -moz-animation-play-state: paused;
+   -o-animation-play-state: paused;
+    animation-play-state: paused;
 }
 
 
 
 
 .FixedComponents2{
-  opacity: 0.9;
-  z-index: 10;
-  overflow-y: scroll;
-  width: 60vw;
-  height: 20vw;
-  background-color: white;
-  position: absolute;
-  top: 140vw;
-  right: 30vw;
-  transform: rotate(2deg);
+    opacity: 0.9;
+    z-index: 10;
+    overflow-y: scroll;
+    width: 80vw;
+    height: 8vw;
+    background-color: white;
+    position: absolute;
+    top: 285vw;
+  transform: rotate(0deg);
   box-shadow: 6px 10px 17px 0px white;
   -webkit-animation: FixedComponents2 4s infinite;
   animation: FixedComponents2 4s infinite;
+
 }
+
+.FixedComponents2 img{
+  height: 88%;
+}
+
+
+
+
+.FixedComponents2:hover{
+  -webkit-animation-play-state: paused;
+   -moz-animation-play-state: paused;
+   -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes FixedComponents2 {
-    from {right: 10vw;}
-    to {right: 20vw;}
+    from {left: 10vw;}
+    to {left: 13vw;}
 }
 
 @keyframes FixedComponents2 {
-  from {right: 10vw;}
-  to {right: 20vw;}
+  from {left: 10vw;}
+  to {left: 13vw;}
 }
 
-
+.FixedComponents3 hr{
+  border: 1px dotted blue;
+}
 
 .FixedComponents3{
   opacity: 0.9;
-  z-index: 10;
-  overflow-y: scroll;
-  width: 60vw;
-  height: 20vw;
-  background-color: white;
-  position: absolute;
-  top: 400vw;
-  right: 70vw;
-  transform: rotate(2deg);
-  box-shadow: 6px 10px 17px 0px white;
-  -webkit-animation: FixedComponents3 4s infinite;
-  animation: FixedComponents3 4s infinite;
+    z-index: 10;
+    overflow-y: scroll;
+    width: 30vw;
+    height: 43vw;
+    background-color: white;
+    position: absolute;
+    top: 196vw;
+    right: 10vw;
+    -webkit-transform: rotate(-4deg);
+    -ms-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+    box-shadow: 6px 10px 17px 0px white;
+    -webkit-animation: FixedComponents3 4s infinite;
+    animation: FixedComponents3 13s infinite;
+}
+
+.FixedComponents3Img img{
+  width: 61%;
+}
+
+.FixedComponents3MarqueeImg{
+  width: 20% !important;
+}
+
+.FixedComponents3:hover{
+  -webkit-animation-play-state: paused;
+   -moz-animation-play-state: paused;
+   -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+@-webkit-keyframes FixedComponents3 {
+  0% {
+      transform:  translate(-111px,5px)  ;
+  }
+  26% {
+    transform:  translate(-111px,5px)  ;
+  }
+  60% {
+    transform:  translate(80px,-98px)  ;
+  }
+  90% {
+    transform:  translate(-111px,5px)  ;
+  }
+  100% {
+    transform:  translate(-263px,121px)  ;
+  }
+}
+
+@keyframes FixedComponents3 {
+    0% {
+        transform:  translate(-111px,5px)  ;
+    }
+    26% {
+      transform:  translate(-111px,5px)  ;
+    }
+    60% {
+      transform:  translate(80px,-98px)  ;
+    }
+    90% {
+      transform:  translate(-111px,5px)  ;
+    }
+    100% {
+      transform:  translate(-263px,121px)  ;
+    }
+}
+
+.FixedComponents3 p{
+  font-weight: lighter;
 }
 
 
+.FixedComponents3 span{
+  color: 	black;
+  background-color: #00FF7F;
+}
 
 .marquee{
   color: white;

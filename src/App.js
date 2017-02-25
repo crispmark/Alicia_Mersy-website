@@ -9,8 +9,6 @@ import FixedComponents3 from "./FixedComponents3.js";
 import TypeWriter from 'react-typewriter';
 
 
-
-
 class App extends Component {
     render() {
         return(
@@ -20,12 +18,11 @@ class App extends Component {
               <FixedImgs></FixedImgs>
               <FixedComponents1></FixedComponents1>
               <FixedComponents3></FixedComponents3>
+              <FixedComponents2></FixedComponents2>
 
-                <TypeWriter className="typeWritter" minDelay={75} typing={1}>
-                  '_“If you are irritated by every rub, how will your mirror be polished?” Sufi Master'
-                </TypeWriter>
 
               <Home></Home>
+
             </div>
             )
     }
