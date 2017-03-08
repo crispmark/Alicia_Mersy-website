@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import "./App.css";
+var Marquee = require('react-marquee');
+
 
 
 class HorizontalMarquee extends Component {
@@ -48,15 +50,19 @@ class HorizontalMarquee extends Component {
       return (
 
           <div className="marquee">
+
+
             <marquee direction={direction[Math.floor(direction.length * Math.random())]}>
 
             {randomizedArray.map((ele) =>
               <span key={ele.key}>
-              <img src={ele.source} />
+              <img className={"img_marquee"} src={ele.source} />
               </span>
             )}
 
             </marquee>
+
+
           </div>
           );
 

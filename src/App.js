@@ -16,10 +16,6 @@ class App extends Component {
 
               <NavBar></NavBar>
               <FixedImgs></FixedImgs>
-              <FixedComponents1></FixedComponents1>
-              <FixedComponents3></FixedComponents3>
-              <FixedComponents2></FixedComponents2>
-
 
               <Home></Home>
 
@@ -29,3 +25,8 @@ class App extends Component {
 }
 
 export default App;
+
+
+// <FixedComponents1></FixedComponents1>
+// <FixedComponents3></FixedComponents3>
+// <FixedComponents2></FixedComponents2>

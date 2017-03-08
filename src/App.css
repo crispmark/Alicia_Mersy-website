@@ -13,6 +13,10 @@ body{
 
 }
 
+.img_marquee:hover{
+  width: 300%;
+}
+
 
 .FixedComponents1{
   opacity: 0.9;
