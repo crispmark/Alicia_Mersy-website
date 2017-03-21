@@ -62,7 +62,6 @@ class HorizontalMarquee extends Component {
 
             </marquee>
 
-
           </div>
           );
 

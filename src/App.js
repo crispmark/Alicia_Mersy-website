@@ -3,10 +3,11 @@ import { Router, Route, Link } from 'react-router';
 import NavBar from './NavBar.js'
 import FixedImgs from './FixedImgs.js'
 import Home from "./Home.js"
-import FixedComponents1 from "./FixedComponents1.js";
+import FixedComponentsA from "./FixedComponentsA.js";
 import FixedComponents2 from "./FixedComponents2.js";
 import FixedComponents3 from "./FixedComponents3.js";
 import TypeWriter from 'react-typewriter';
+import video_component from "./video_component.js"
 
 
 class App extends Component {
@@ -15,9 +16,13 @@ class App extends Component {
             <div className="full-page">
 
               <NavBar></NavBar>
-              <FixedImgs></FixedImgs>
+              <FixedComponentsA></FixedComponentsA>
+              <FixedComponents2></FixedComponents2>
+              <FixedComponents3></FixedComponents3>
 
               <Home></Home>
+
+              {this.props.children}
 
             </div>
             )
@@ -27,6 +32,5 @@ class App extends Component {
 export default App;
 
 
-// <FixedComponents1></FixedComponents1>
-// <FixedComponents3></FixedComponents3>
-// <FixedComponents2></FixedComponents2>
+
+  // <FixedImgs></FixedImgs>

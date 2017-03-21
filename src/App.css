@@ -1,5 +1,6 @@
 body{
   background-color: black;
+  overflow-x: hidden;
 }
 
 
@@ -13,12 +14,23 @@ body{
 
 }
 
-.img_marquee:hover{
-  width: 300%;
+/*.img_marquee:hover{
+  height: 300%;
+}*/
+
+
+.video_component{
+  position: fixed;
+  top: 10vw;
+  left: 30vw;
+  z-index: 100000;
+  width: 80vw;
 }
 
 
-.FixedComponents1{
+
+
+.FixedComponentsA{
   opacity: 0.9;
   z-index: 3;
   overflow-y: scroll;
@@ -26,67 +38,122 @@ body{
   height: 46vw;
   background-color: white;
   position: absolute;
-  top: 5vw;
+  top: 115vw;
   left: 1vw;
   transform: rotate(2deg);
   box-shadow: 6px 10px 17px 0px white;
-  -webkit-animation: FixedComponents1 10s infinite;
-  animation: FixedComponents1 10s infinite;
+  -webkit-animation: FixedComponentsA 10s infinite;
+  animation: FixedComponentsA 10s infinite;
 }
 
 
-.FixedComponents1 p{
+.FixedComponentsA p{
   font-weight: lighter;
   margin: 2%;
 }
 
-.FixedComponents1 span{
+.FixedComponentsA span{
   color: black;
-  background-color: #00FF7F;
+  /*background-color: #00FF7F;*/
 }
 
-.FixedComponents1 img{
+.FixedComponentsA img{
   width: 80%;
   margin-left: 2%;
   border: 1px dotted black;
 }
 
 /* Safari 4.0 - 8.0 */
-@-webkit-keyframes FixedComponents1 {
+@-webkit-keyframes FixedComponentsA {
     from {left: 10vw;}
     to {left: 20vw;}
 }
 
-@keyframes FixedComponents1 {
+@keyframes FixedComponentsA {
   from {left: 10vw;}
   to {left: 20vw;}
 }
 
 
-.FixedComponents1:hover{
+.FixedComponentsA:hover{
   -webkit-animation-play-state: paused;
    -moz-animation-play-state: paused;
    -o-animation-play-state: paused;
     animation-play-state: paused;
 }
 
+.FixedComponentsA_2{
+  width: 20vw;
+  height: 25vw;
+  background-color: white;
+  transform: rotate(2deg);
+  box-shadow: 6px 10px 17px 0px white;
+   opacity: 1;
+    top: 24vw;
+   left: 71vw;
+    position: absolute;
+    z-index: 1000;
+}
 
+.first_background{
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+}
+
+.second_background{
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+}
+
+
+
+.second_background p{
+  color: black;
+  font-size: 6vw;
+  text-align: center;
+  text-shadow: 0 0 70px #404040;
+  -moz-animation:myfirst 10s infinite; /* Firefox */
+-webkit-animation:myfirst 10s infinite; /* Safari and Chrome */
+  }
+
+
+  @-moz-keyframes myfirst /* Firefox */
+{
+  0%   {color:black;}
+  25%   {color:#181818  ;}
+  50%  {color:	#202020 ;}
+  75%   {color:#282828  ;}
+  100%   {color:black;}
+}
+
+    @-webkit-keyframes myfirst /* Safari and Chrome */
+{
+  0%   {color:black;}
+  25%   {color:#181818  ;}
+  50%  {color:	#202020 ;}
+  75%   {color:#282828  ;}
+  100%   {color:black;}
+}
 
 
 .FixedComponents2{
-    opacity: 0.9;
-    z-index: 10;
-    overflow-y: scroll;
-    width: 80vw;
-    height: 8vw;
-    background-color: white;
-    position: absolute;
-    top: 285vw;
+  border-radius: 60%;
+  opacity: 0.9;
+  z-index: 10;
+  overflow-y: scroll;
+  width: 10vw;
+  height: 38vw;
+  background-color: white;
+  position: absolute;
+  top: 75vw;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
   transform: rotate(0deg);
   box-shadow: 6px 10px 17px 0px white;
   -webkit-animation: FixedComponents2 4s infinite;
   animation: FixedComponents2 4s infinite;
-
 }
 
 .FixedComponents2 img{
@@ -128,7 +195,7 @@ body{
     background-color: white;
     position: absolute;
     top: 196vw;
-    right: 10vw;
+    left: 33vw;
     -webkit-transform: rotate(-4deg);
     -ms-transform: rotate(-4deg);
     transform: rotate(-4deg);
@@ -137,9 +204,32 @@ body{
     animation: FixedComponents3 13s infinite;
 }
 
-.FixedComponents3Img img{
-  width: 61%;
+.FixedComponents3ImgContainer{
+  border: 2px dotted blue;
+  margin: 1vw;
 }
+
+
+.FixedComponents3Img img{
+  width: 100%;
+  padding-top: 0vw;
+
+}
+
+.p{
+  position: absolute;
+  left: 0px;
+  height: 100vw;
+  width: 10vw;
+  background-color: black;
+
+}
+
+.FixedImg img{
+
+}
+
+
 
 .FixedComponents3MarqueeImg{
   width: 20% !important;
@@ -195,7 +285,7 @@ body{
 
 .FixedComponents3 span{
   color: 	black;
-  background-color: #00FF7F;
+  /*background-color: #00FF7F;*/
 }
 
 .marquee{
@@ -206,16 +296,30 @@ body{
   width : 100%;
   z-index: 4;
   position: fixed;
+  top: 0px;
 }
+
+
 
 .photo-content img{
   width: 100vw;
+  margin: 0 auto;
+
 }
 
 .bigImgs{
   width: 100vw;
 }
 
+.p_images img {
+  position: absolute;
+width: 19vw;
+right: 0;
+}
+
+.FixedImg1{
+  position: absolute !important;
+}
 
 .FixedImg img{
   position: fixed;

@@ -7,7 +7,7 @@ class NavBar extends Component {
   render() {
     return (
     <div className="NavBarHeader">
-      <button>{"https://vimeo.com/193859081"}</button>
+      <button><Link to="video">video</Link></button>
       <button>{"https://vimeo.com/115724046"}</button>
       <button>aliciamersy@gmail.com</button>
     </div>

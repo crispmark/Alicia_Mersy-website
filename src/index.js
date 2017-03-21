@@ -4,6 +4,8 @@ import { Router, Route, Link, browserHistory, applyRouterMiddleware, IndexRoute}
 import Home from './Home.js'
 import App from './App.js';
 import './index.css';
+import video_component from "./video_component.js"
+
 
 
 
@@ -13,6 +15,7 @@ ReactDOM.render(
 
     <Route path="/" component={App}>
         <IndexRoute component={Home} />
+        <Route path="video" component={video_component} />
     </Route>
   </Router>,
 
