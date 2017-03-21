@@ -11,6 +11,8 @@ import video_component from "./video_component.js"
 
 ReactDOM.render(
 
+
+
     <Router history={browserHistory} >
 
     <Route path="/" component={App}>

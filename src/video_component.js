@@ -13,7 +13,10 @@ class video_component extends Component {
 
         <div className="video_component">
 
-          <iframe src="https://player.vimeo.com/video/193859081"></iframe>
+          <video width="320" height="240" autoplay>
+            <source src="vid/a1.mp4" type="video/mp4"></source>
+          </video>
+
 
        </div>
 
