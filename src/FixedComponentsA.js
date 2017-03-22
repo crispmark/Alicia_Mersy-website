@@ -26,9 +26,7 @@ class FixedComponentsA extends Component {
 
 
           </div>
-          <div className="FixedComponentsA_2">
-
-          </div>
+        
           </div>
           );
 

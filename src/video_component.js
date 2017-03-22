@@ -12,12 +12,10 @@ class video_component extends Component {
       return (
 
         <div className="video_component">
+          <video autoPlay="autoPlay">
+            <source src="https://res.cloudinary.com/www-c-t-l-k-com/video/upload/v1490139070/a1_u3b6oq.mp4" type="video/mp4" />
 
-          <video width="320" height="240" autoplay>
-            <source src="vid/a1.mp4" type="video/mp4"></source>
           </video>
-
-
        </div>
 
           );

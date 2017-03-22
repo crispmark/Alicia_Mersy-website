@@ -21,10 +21,6 @@ class FixedComponents3 extends Component {
             </div>
 
 
-
-            <p><span>_There will be a contour make up tutorial video, a few internet cafe prints, a heat dish parabolic electric heater, Vaseline, Sufism rituals, cable ties, warped 3d baby blue metallic textures and Lord concentrated musk.</span></p>
-
-        
        </div>
 
           );

@@ -12,12 +12,6 @@ class NavBar extends Component {
     }
   }
 
-  // getInitialState() {
-  //      return {
-  //          showComponent: false
-  //      };
-  //  }
-
    changeVisibility (){
 
        this.setState({
@@ -34,8 +28,7 @@ class NavBar extends Component {
 
       return (
         <div className="NavBarHeader">
-          <button onClick={this.changeVisibility.bind(this)}><Link to="video">video</Link></button>
-          <button>{"https://vimeo.com/115724046"}</button>
+          <button onClick={this.changeVisibility.bind(this)}><Link to="video">{"https://vimeo.com/115724046"}</Link></button>
           <button>aliciamersy@gmail.com</button>
         </div>
 
@@ -46,8 +39,7 @@ class NavBar extends Component {
 
       return (
         <div className="NavBarHeader">
-          <button onClick={this.changeVisibility.bind(this)}><Link to="/">video</Link></button>
-          <button>{"https://vimeo.com/115724046"}</button>
+          <button onClick={this.changeVisibility.bind(this)}><Link to="/">{"https://vimeo.com/115724046"}</Link></button>
           <button>aliciamersy@gmail.com</button>
         </div>
 

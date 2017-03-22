@@ -19,12 +19,27 @@ body{
 }*/
 
 
+a{
+  color: black;
+}
+
+link:visited{
+  color: black;
+}
+
 .video_component{
   position: fixed;
-  top: 10vw;
-  left: 30vw;
+  top: 2vw;
+  left: 8vw;
   z-index: 100000;
   width: 80vw;
+  display: flex;
+}
+
+
+video{
+  z-index: 10000000000;
+  box-shadow: 0px 0px 75px 0px rgba(255,255,255,1);
 }
 
 
@@ -40,7 +55,7 @@ body{
   height: 46vw;
   background-color: white;
   position: absolute;
-  top: 115vw;
+  top: 4vw;
   left: 1vw;
   transform: rotate(2deg);
   box-shadow: 6px 10px 17px 0px white;
@@ -110,6 +125,11 @@ body{
 }
 
 
+.second_background img{
+  width: 80vw;
+  position: absolute;
+}
+
 
 .second_background p{
   color: black;
@@ -149,7 +169,7 @@ body{
   height: 38vw;
   background-color: white;
   position: absolute;
-  top: 75vw;
+  top: 11vw;
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -193,11 +213,11 @@ body{
     z-index: 10;
     overflow-y: scroll;
     width: 30vw;
-    height: 43vw;
+    height: 29vw;
     background-color: white;
     position: absolute;
-    top: 196vw;
-    left: 33vw;
+    top: 12vw;
+    left: 60vw;
     -webkit-transform: rotate(-4deg);
     -ms-transform: rotate(-4deg);
     transform: rotate(-4deg);
@@ -258,27 +278,28 @@ body{
     transform:  translate(-111px,5px)  ;
   }
   100% {
-    transform:  translate(-263px,121px)  ;
+    transform:  translate(-111px,5px)  ;
   }
 }
 
 @keyframes FixedComponents3 {
-    0% {
-        transform:  translate(-111px,5px)  ;
-    }
-    26% {
+  0% {
       transform:  translate(-111px,5px)  ;
-    }
-    60% {
-      transform:  translate(80px,-98px)  ;
-    }
-    90% {
-      transform:  translate(-111px,5px)  ;
-    }
-    100% {
-      transform:  translate(-263px,121px)  ;
-    }
+  }
+  26% {
+    transform:  translate(-111px,5px)  ;
+  }
+  60% {
+    transform:  translate(80px,-98px)  ;
+  }
+  90% {
+    transform:  translate(-111px,5px)  ;
+  }
+  100% {
+    transform:  translate(-111px,5px)  ;
+  }
 }
+
 
 .FixedComponents3 p{
   font-weight: lighter;
