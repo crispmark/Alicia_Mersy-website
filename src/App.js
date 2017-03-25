@@ -7,7 +7,6 @@ import FixedComponentsA from "./FixedComponentsA.js";
 import FixedComponents2 from "./FixedComponents2.js";
 import FixedComponents3 from "./FixedComponents3.js";
 import TypeWriter from 'react-typewriter';
-import video_component from "./video_component.js"
 
 
 class App extends Component {

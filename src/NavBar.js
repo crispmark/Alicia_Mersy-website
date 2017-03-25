@@ -28,7 +28,8 @@ class NavBar extends Component {
 
       return (
         <div className="NavBarHeader">
-          <button onClick={this.changeVisibility.bind(this)}><Link to="video">{"https://vimeo.com/115724046"}</Link></button>
+          <button onClick={this.changeVisibility.bind(this)}><Link to="iwsiwi_teaser">IWSIWY TEASER</Link></button>
+          <button onClick={this.changeVisibility.bind(this)}><Link to="aman_aman">AMAN AMAN (WINE SLOW)</Link></button>
           <button>aliciamersy@gmail.com</button>
         </div>
 
@@ -39,7 +40,10 @@ class NavBar extends Component {
 
       return (
         <div className="NavBarHeader">
-          <button onClick={this.changeVisibility.bind(this)}><Link to="/">{"https://vimeo.com/115724046"}</Link></button>
+          <button onClick={this.changeVisibility.bind(this)}><Link to="/">IWSIWY TEASER</Link></button>
+          <button onClick={this.changeVisibility.bind(this)}><Link to="/">AMAN AMAN (WINE SLOW)</Link></button>
+
+
           <button>aliciamersy@gmail.com</button>
         </div>
 

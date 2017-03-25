@@ -4,14 +4,14 @@ import { StickyContainer, Sticky } from 'react-sticky';
 
 
 
-class video_component extends Component {
+class video_component1 extends Component {
 
       render() {
 
 
       return (
 
-        <div className="video_component">
+        <div className="video_component1">
           <video autoPlay="autoPlay">
             <source src="https://res.cloudinary.com/www-c-t-l-k-com/video/upload/v1490139070/a1_u3b6oq.mp4" type="video/mp4" />
 
@@ -23,4 +23,4 @@ class video_component extends Component {
         }
 }
 
-export default video_component;
+export default video_component1;

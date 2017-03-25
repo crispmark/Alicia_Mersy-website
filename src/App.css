@@ -21,13 +21,14 @@ body{
 
 a{
   color: black;
+  text-decoration: none;
 }
 
 link:visited{
   color: black;
 }
 
-.video_component{
+.video_component1{
   position: fixed;
   top: 2vw;
   left: 8vw;
@@ -44,6 +45,24 @@ video{
 
 
 
+.video_component2{
+  position: fixed;
+  top: 2vw;
+  left: 8vw;
+  z-index: 100000;
+  width: 80vw;
+  display: flex;
+}
+
+.video_component2 video{
+  height: 45vw;
+  margin: 0 auto;
+  width: 80vw;
+  position: fixed;
+  left: 12vw;
+  top: 8vh;
+
+}
 
 
 
@@ -82,12 +101,12 @@ video{
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes FixedComponentsA {
-    from {left: 10vw;}
+    from {left: 90vw;}
     to {left: 20vw;}
 }
 
 @keyframes FixedComponentsA {
-  from {left: 10vw;}
+  from {left: 90vw;}
   to {left: 20vw;}
 }
 
@@ -117,6 +136,102 @@ video{
   height: 100vh;
   width: 100vw;
 }
+
+.first_background img{
+  width: 50vw;
+  position: absolute;
+  z-index: 100;
+  top: 62.7vw;
+  right: 0px;
+  transform: rotate(-1deg);
+    -webkit-animation: first_backgroundX 5s linear 0s infinite alternate, first_backgroundY 5s linear 0s infinite alternate;
+     -moz-animation: first_backgroundX 5s linear 0s infinite alternate, first_backgroundY 5s linear 0s infinite alternate;
+     -o-animation: first_backgroundX 5s linear 0s infinite alternate, first_backgroundY 5s linear 0s infinite alternate;
+     animation: first_backgroundX 5s linear 0s infinite alternate, first_backgroundY 5s linear 0s infinite alternate;
+}
+
+
+@-webkit-keyframes first_backgroundX {
+    from {
+      right: 0px;
+    }
+    to {
+      right: 3vw;
+    }
+}
+
+@-moz-keyframes first_backgroundX {
+  from {
+    right: 0px;
+  }
+  to {
+    right: 3vw;
+  }
+}
+
+@-o-keyframes first_backgroundX {
+  from {
+    right: 0px;
+  }
+  to {
+    right: 3vw;
+  }
+}
+
+@keyframes first_backgroundX {
+  from {
+    right: 0px;
+  }
+  to {
+    right: 3vw;
+  }
+}
+
+@-webkit-keyframes first_backgroundY {
+  from {
+    top: 62.7vw;
+  }
+  to {
+    top: 65vw;
+  }
+}
+
+@-moz-keyframes first_backgroundY {
+  from {
+    top: 62.7vw;
+  }
+  to {
+    top: 65vw;
+  }
+}
+
+@-o-keyframes first_backgroundY {
+  from {
+    top: 62.7vw;
+  }
+  to {
+    top: 65vw;
+  }
+}
+
+@keyframes first_backgroundY {
+    from {
+      top: 62.7vw;
+    }
+    to {
+      top: 65vw;
+    }
+}
+
+
+.marquee_div_right{
+  width: 39vw;
+  height: 100vh;
+  position: absolute;
+  right: 0px;
+  /*border-left: 1px solid white;*/
+}
+
 
 .second_background{
   background-color: black;
@@ -160,11 +275,13 @@ video{
 }
 
 
+
+
 .FixedComponents2{
   border-radius: 60%;
   opacity: 0.9;
-  z-index: 10;
-  overflow-y: scroll;
+  z-index: 2;
+  overflow: hidden;
   width: 10vw;
   height: 38vw;
   background-color: white;
@@ -179,7 +296,8 @@ video{
 }
 
 .FixedComponents2 img{
-  height: 88%;
+  height: 22%;
+  padding-left: 18px;
 }
 
 
@@ -209,6 +327,7 @@ video{
 }
 
 .FixedComponents3{
+  display: none;
   opacity: 0.9;
     z-index: 10;
     overflow-y: scroll;
