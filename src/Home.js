@@ -52,7 +52,7 @@ var randomizedArray2 = randomize(imgsToDisplay2);
 return (
 
 
-    <div >
+    <div>
           <FixedImgs></FixedImgs>
           <div className="first_background">
             <div className="marquee_div_right">
