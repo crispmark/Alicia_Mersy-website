@@ -53,6 +53,8 @@ return (
 
 
     <div >
+
+          <img id="set_time_1" src="https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_scale,w_400/v1490486806/SHIN_hlneuk.png" />
           <FixedImgs></FixedImgs>
           <div className="first_background">
             <div className="marquee_div_right">
@@ -87,7 +89,6 @@ return (
                 <HorizontalMarquee></HorizontalMarquee>
               </div>
             )}
-
 
 
         </div>

@@ -19,6 +19,14 @@ body{
 }*/
 
 
+#set_time_1{
+  display: none;
+  position: fixed;
+  top: 3vw;
+  z-index: 10000000;
+}
+
+
 a{
   color: black;
   text-decoration: none;
@@ -223,6 +231,10 @@ video{
     }
 }
 
+/*.first_background img:hover{
+  display: none;
+}*/
+
 
 .marquee_div_right{
   width: 39vw;
@@ -243,7 +255,49 @@ video{
 .second_background img{
   width: 80vw;
   position: absolute;
+  -webkit-animation: second_background_imgX 5s linear 0s infinite alternate, second_background_imgY 5s linear 0s infinite alternate;
+   -moz-animation: second_background_imgX 5s linear 0s infinite alternate, second_background_imgY 5s linear 0s infinite alternate;
+   -o-animation: second_background_imgX 5s linear 0s infinite alternate, second_background_imgY 5s linear 0s infinite alternate;
+   animation: second_background_imgX 5s linear 0s infinite alternate, second_background_imgY 5s linear 0s infinite alternate;
 }
+
+
+@-webkit-keyframes second_background_imgX {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 3vw;
+  }
+}
+
+@-moz-keyframes second_background_imgX {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 3vw;
+  }
+}
+
+@-o-keyframes second_background_imgX {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 3vw;
+  }
+}
+
+@keyframes second_background_imgX {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 3vw;
+  }
+}
+
 
 
 .second_background p{
@@ -251,12 +305,12 @@ video{
   font-size: 6vw;
   text-align: center;
   text-shadow: 0 0 70px #404040;
-  -moz-animation:myfirst 10s infinite; /* Firefox */
--webkit-animation:myfirst 10s infinite; /* Safari and Chrome */
+  -moz-animation:second_background_p 10s infinite; /* Firefox */
+-webkit-animation:second_background_p 10s infinite; /* Safari and Chrome */
   }
 
 
-  @-moz-keyframes myfirst /* Firefox */
+  @-moz-keyframes second_background_p /* Firefox */
 {
   0%   {color:black;}
   25%   {color:#181818  ;}
@@ -265,7 +319,7 @@ video{
   100%   {color:black;}
 }
 
-    @-webkit-keyframes myfirst /* Safari and Chrome */
+    @-webkit-keyframes second_background_p /* Safari and Chrome */
 {
   0%   {color:black;}
   25%   {color:#181818  ;}
@@ -274,6 +328,12 @@ video{
   100%   {color:black;}
 }
 
+
+.third_background{
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+}
 
 
 
