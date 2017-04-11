@@ -44,6 +44,25 @@ video{
 }
 
 
+.info_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.info{
+  background-color: white;
+  width: 80vw;
+  height: 76vh;
+
+}
+
+
 
 .video_component2{
   position: fixed;
@@ -70,8 +89,8 @@ video{
   opacity: 0.9;
   z-index: 3;
   overflow-y: scroll;
-  width: 34vw;
-  height: 46vw;
+  width: 24vw;
+  height: 41vw;
   background-color: white;
   position: absolute;
   top: 4vw;
@@ -243,7 +262,97 @@ video{
 .second_background img{
   width: 80vw;
   position: absolute;
+  animation: animationFrames 4s infinite;
+  transform-origin: 50% 50%;
+  -webkit-animation: animationFrames 4s infinite;
+  -webkit-transform-origin: 50% 50%;
+  -moz-animation: animationFrames 4s infinite;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: 50% 50%;
+  -o-animation: animationFrames 4s infinite;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: 50% 50%;
+  -ms-animation: animationFrames 4s infinite;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: 50% 50%;
 }
+
+
+@keyframes animationFrames{
+  0% {
+    transform:  translate(0px,0px)  ;
+  }
+  45% {
+    transform:  translate(44px,-11px)  ;
+  }
+  83% {
+    transform:  translate(92px,-26px)  ;
+  }
+  100% {
+    transform:  translate(92px,-26px)  ;
+  }
+}
+
+@-moz-keyframes animationFrames{
+  0% {
+    -moz-transform:  translate(0px,0px)  ;
+  }
+  45% {
+    -moz-transform:  translate(44px,-11px)  ;
+  }
+  83% {
+    -moz-transform:  translate(92px,-26px)  ;
+  }
+  100% {
+    -moz-transform:  translate(92px,-26px)  ;
+  }
+}
+
+@-webkit-keyframes animationFrames {
+  0% {
+    -webkit-transform:  translate(0px,0px)  ;
+  }
+  45% {
+    -webkit-transform:  translate(44px,-11px)  ;
+  }
+  83% {
+    -webkit-transform:  translate(92px,-26px)  ;
+  }
+  100% {
+    -webkit-transform:  translate(92px,-26px)  ;
+  }
+}
+
+@-o-keyframes animationFrames {
+  0% {
+    -o-transform:  translate(0px,0px)  ;
+  }
+  45% {
+    -o-transform:  translate(44px,-11px)  ;
+  }
+  83% {
+    -o-transform:  translate(92px,-26px)  ;
+  }
+  100% {
+    -o-transform:  translate(92px,-26px)  ;
+  }
+}
+
+@-ms-keyframes animationFrames {
+  0% {
+    -ms-transform:  translate(0px,0px)  ;
+  }
+  45% {
+    -ms-transform:  translate(44px,-11px)  ;
+  }
+  83% {
+    -ms-transform:  translate(92px,-26px)  ;
+  }
+  100% {
+    -ms-transform:  translate(92px,-26px)  ;
+  }
+}
+
 
 
 .second_background p{
@@ -251,12 +360,12 @@ video{
   font-size: 6vw;
   text-align: center;
   text-shadow: 0 0 70px #404040;
-  -moz-animation:myfirst 10s infinite; /* Firefox */
--webkit-animation:myfirst 10s infinite; /* Safari and Chrome */
+  -moz-animation:second_background_p 10s infinite; /* Firefox */
+-webkit-animation:second_background_p 10s infinite; /* Safari and Chrome */
   }
 
 
-  @-moz-keyframes myfirst /* Firefox */
+  @-moz-keyframes second_background_p /* Firefox */
 {
   0%   {color:black;}
   25%   {color:#181818  ;}
@@ -265,7 +374,7 @@ video{
   100%   {color:black;}
 }
 
-    @-webkit-keyframes myfirst /* Safari and Chrome */
+    @-webkit-keyframes second_background_p /* Safari and Chrome */
 {
   0%   {color:black;}
   25%   {color:#181818  ;}
@@ -335,7 +444,7 @@ video{
     height: 29vw;
     background-color: white;
     position: absolute;
-    top: 12vw;
+    top: 600vw;
     left: 60vw;
     -webkit-transform: rotate(-4deg);
     -ms-transform: rotate(-4deg);
@@ -436,7 +545,7 @@ video{
 
 .NavBarHeader{
   width : 100%;
-  z-index: 4;
+  z-index: 100000000000;
   position: fixed;
   top: 0px;
 }

@@ -15,9 +15,6 @@ class FixedComponents2 extends Component {
           <img src={"https://res.cloudinary.com/www-c-t-l-k-com/image/upload/v1490155278/17_imqsef.png"} />
           <img src={"https://res.cloudinary.com/www-c-t-l-k-com/image/upload/v1490155257/4_brja8b.png"} />
 
-
-
-
        </div>
 
           );

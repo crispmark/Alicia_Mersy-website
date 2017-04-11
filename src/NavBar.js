@@ -19,38 +19,21 @@ class NavBar extends Component {
        });
    }
 
+   TriggerPopup() {
+         window.open("http://www.viedange.club","mywin","width=800,height=800,screenX=50,left=300,screenY=50,top=200,status=yes,menubar=yes");
+   }
+
 
   render() {
 
 
-
-    if(this.state.showComponent === false){
-
-      return (
+    return (
         <div className="NavBarHeader">
-          <button onClick={this.changeVisibility.bind(this)}><Link to="iwsiwi_teaser">IWSIWY TEASER</Link></button>
-          <button onClick={this.changeVisibility.bind(this)}><Link to="aman_aman">AMAN AMAN (WINE SLOW)</Link></button>
+          <button onClick={this.TriggerPopup}>INFOS</button>
           <button>aliciamersy@gmail.com</button>
         </div>
 
       );
-
-    }
-    else {
-
-      return (
-        <div className="NavBarHeader">
-          <button onClick={this.changeVisibility.bind(this)}><Link to="/">IWSIWY TEASER</Link></button>
-          <button onClick={this.changeVisibility.bind(this)}><Link to="/">AMAN AMAN (WINE SLOW)</Link></button>
-
-
-          <button>aliciamersy@gmail.com</button>
-        </div>
-
-      );
-
-
-    }
 
   }
 }

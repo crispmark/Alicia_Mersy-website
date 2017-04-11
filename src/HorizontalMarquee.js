@@ -28,6 +28,8 @@ class HorizontalMarquee extends Component {
           { key: 15, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_scale,h_400/v1487098385/IMG_0770_granhb.jpg"},
           { key: 16, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_scale,h_400/v1487098399/IMG_4633_mulaeh.jpg"},
           { key: 17, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_scale,h_400/v1487098385/IMG_3827_hcr44d.jpg"},
+          { key: 18, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/v1491681757/Alicia_Mersy/DSC07651.jpg"},
+          { key: 19, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/v1491681508/Alicia_Mersy/IMG_0764.jpg"}
 
         ];
 

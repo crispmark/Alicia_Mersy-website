@@ -6,6 +6,7 @@ import App from './App.js';
 import './index.css';
 import video_component1 from "./video_component1.js"
 import video_component2 from "./video_component2.js"
+import info from "./info.js"
 
 
 
@@ -20,8 +21,6 @@ ReactDOM.render(
     <Route path="/" component={App}>
 
         <IndexRoute component={Home} />
-        <Route path="iwsiwi_teaser" component={video_component1} />
-        <Route path="aman_aman" component={video_component2} />
 
     </Route>
   </Router>,
