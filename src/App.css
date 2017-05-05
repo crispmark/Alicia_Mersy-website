@@ -254,31 +254,167 @@ video{
 
 .second_background{
   background-color: black;
-  height: 100vh;
+  height: 321vh;
   width: 100vw;
 }
 
+.second_background_forth_img{
+  width: 10vw;
+}
 
-.second_background img{
+.second_background_second_img{
+  width: 70vw;
+}
+
+.second_background_third_img{
+  width: 25vw;
+}
+
+.flex_container{
+  display: flex;
+  width: 100vw;
+  position: absolute;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  padding-top: 127vh;
+}
+
+
+.second_background .second_background_first_img{
   width: 80vw;
   position: absolute;
-  animation: animationFrames 4s infinite;
+  animation: animationFrames1 4s infinite;
   transform-origin: 50% 50%;
-  -webkit-animation: animationFrames 4s infinite;
+  -webkit-animation: animationFrames1 4s infinite;
   -webkit-transform-origin: 50% 50%;
-  -moz-animation: animationFrames 4s infinite;
+  -moz-animation: animationFrames1 4s infinite;
   -moz-animation-iteration-count: 1;
   -moz-transform-origin: 50% 50%;
-  -o-animation: animationFrames 4s infinite;
+  -o-animation: animationFrames1 4s infinite;
   -o-animation-iteration-count: 1;
   -o-transform-origin: 50% 50%;
-  -ms-animation: animationFrames 4s infinite;
+  -ms-animation: animationFrames1 4s infinite;
   -ms-animation-iteration-count: 1;
   -ms-transform-origin: 50% 50%;
 }
 
 
-@keyframes animationFrames{
+.third_background{
+  background-color: black;
+  height: 180vh;
+  width: 100vw;
+}
+
+.third_background_first_img{
+  width: 60vw;
+  animation: animationFrames1 4s infinite;
+
+}
+
+
+.third_background_forth_img{
+  width: 60vw;
+  animation: animationFrames1 4s infinite;
+}
+
+
+.third_background_fifth_img{
+  width: 10vw;
+  animation: animationFrames2 10s infinite;
+}
+
+.third_background_sixth_img{
+      width: 10vw;
+      position: absolute;
+      right: 10vw;
+      animation: animationFrames1 4s infinite;
+}
+
+.third_background_sixth_img{
+  width: 10vw;
+  animation: animationFrames1 4s infinite;
+}
+
+
+.third_background_seventh_img{
+  width: 10vw;
+  animation: animationFrames1 4s infinite;
+  padding-top: 70vw;
+  animation: animationFrames3 10s infinite;
+
+}
+
+
+
+
+.third_background .flex_container{
+  justify-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 12vw;
+}
+
+
+.third_background_third_img{
+  width: 70vw;
+}
+
+.third_background_second_img{
+  width: 25vw;
+
+}
+
+
+.fourth_background{
+    background-color: black;
+    height: 200vh;
+    width: 100vw;
+
+}
+
+.fourth_background .flex_container{
+  padding-top: 10vh;
+}
+
+.fourth_background_first_img{
+  animation: animationFrames1 4s infinite;
+  width: 30vw;
+
+}
+
+.fourth_background_second_img{
+  animation: animationFrames1 4s infinite;
+  width: 20vw;
+
+}
+
+
+
+.fourth_background_third_img{
+  animation: animationFrames2 4s infinite;
+  width: 20vw;
+  margin-top: 50vw;
+
+}
+
+
+.fourth_background_forth_img{
+  /*animation: animationFrames2 4s infinite;*/
+  margin-top: 50vw;
+  animation: animationFrames1 10s infinite;
+  width: 40vw;
+  z-index: 10000;
+  position: absolute;
+  right: 0px;
+
+}
+
+
+
+@keyframes animationFrames1{
   0% {
     transform:  translate(0px,0px)  ;
   }
@@ -293,7 +429,7 @@ video{
   }
 }
 
-@-moz-keyframes animationFrames{
+@-moz-keyframes animationFrames1{
   0% {
     -moz-transform:  translate(0px,0px)  ;
   }
@@ -308,7 +444,7 @@ video{
   }
 }
 
-@-webkit-keyframes animationFrames {
+@-webkit-keyframes animationFrames1 {
   0% {
     -webkit-transform:  translate(0px,0px)  ;
   }
@@ -323,7 +459,7 @@ video{
   }
 }
 
-@-o-keyframes animationFrames {
+@-o-keyframes animationFrames1 {
   0% {
     -o-transform:  translate(0px,0px)  ;
   }
@@ -338,7 +474,7 @@ video{
   }
 }
 
-@-ms-keyframes animationFrames {
+@-ms-keyframes animationFrames1 {
   0% {
     -ms-transform:  translate(0px,0px)  ;
   }
@@ -581,4 +717,166 @@ right: 0;
 .marquee img{
   height: 10vh;
   padding-right: 2vw;
+}
+
+
+
+
+
+
+@keyframes animationFrames2{
+  0% {
+    transform:  translate(0px,0px)  ;
+  }
+  45% {
+    transform:  translate(10px,-11px)  ;
+  }
+  83% {
+    transform:  translate(50px,100px)  ;
+  }
+  100% {
+    transform:  translate(0px,0px)  ;
+  }
+}
+
+@-moz-keyframes animationFrames2{
+  0% {
+    transform:  translate(0px,0px)  ;
+  }
+  45% {
+    transform:  translate(10px,-11px)  ;
+  }
+  83% {
+    transform:  translate(50px,100px)  ;
+  }
+  100% {
+    transform:  translate(0px,0px)  ;
+}
+
+}
+
+@-webkit-keyframes animationFrames2 {
+  0% {
+    transform:  translate(0px,0px)  ;
+  }
+  45% {
+    transform:  translate(10px,-11px)  ;
+  }
+  83% {
+    transform:  translate(50px,100px)  ;
+  }
+  100% {
+    transform:  translate(0px,0px)  ;
+}
+}
+
+@-o-keyframes animationFrames2 {
+  0% {
+    transform:  translate(0px,0px)  ;
+  }
+  45% {
+    transform:  translate(10px,-11px)  ;
+  }
+  83% {
+    transform:  translate(50px,100px)  ;
+  }
+  100% {
+    transform:  translate(0px,0px)  ;
+}
+}
+
+@-ms-keyframes animationFrames2 {
+
+  0% {
+    transform:  translate(0px,0px)  ;
+  }
+  45% {
+    transform:  translate(10px,-11px)  ;
+  }
+  83% {
+    transform:  translate(50px,100px)  ;
+  }
+  100% {
+    transform:  translate(0px,0px)  ;
+}
+}
+
+
+
+
+@keyframes animationFrames3{
+  0% {
+    transform:  translate(0px,0px)  ;
+  }
+  45% {
+    transform:  translate(10px,-11px)  ;
+  }
+  83% {
+    transform:  translate(50px,100px)  ;
+  }
+  100% {
+    transform:  translate(0px,0px)  ;
+  }
+}
+
+@-moz-keyframes animationFrames3{
+  0% {
+    transform:  translate(0px,0px)  ;
+  }
+  45% {
+    transform:  translate(10px,-11px)  ;
+  }
+  83% {
+    transform:  translate(50px,100px)  ;
+  }
+  100% {
+    transform:  translate(0px,0px)  ;
+}
+
+}
+
+@-webkit-keyframes animationFrames3 {
+  0% {
+    transform:  translate(0px,0px)  ;
+  }
+  45% {
+    transform:  translate(10px,-11px)  ;
+  }
+  83% {
+    transform:  translate(50px,100px)  ;
+  }
+  100% {
+    transform:  translate(0px,0px)  ;
+}
+}
+
+@-o-keyframes animationFrames3 {
+  0% {
+    transform:  translate(0px,0px)  ;
+  }
+  45% {
+    transform:  translate(10px,-11px)  ;
+  }
+  83% {
+    transform:  translate(50px,100px)  ;
+  }
+  100% {
+    transform:  translate(0px,0px)  ;
+}
+}
+
+@-ms-keyframes animationFrames3 {
+
+  0% {
+    transform:  translate(0px,0px)  ;
+  }
+  45% {
+    transform:  translate(10px,-11px)  ;
+  }
+  83% {
+    transform:  translate(50px,100px)  ;
+  }
+  100% {
+    transform:  translate(0px,0px)  ;
+}
 }

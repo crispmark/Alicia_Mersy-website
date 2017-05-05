@@ -39,7 +39,7 @@ class App extends Component {
 
               <Home></Home>
 
-              {this.props.children}
+              // {this.props.children}
 
             </div>
             )
