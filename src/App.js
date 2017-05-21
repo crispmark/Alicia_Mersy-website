@@ -14,6 +14,8 @@ import video_component1 from "./video_component1.js";
 class App extends Component {
 
 
+
+
     render() {
 
       function monitorScroll(){
@@ -37,9 +39,8 @@ class App extends Component {
               <FixedComponents2></FixedComponents2>
               <FixedComponents3></FixedComponents3>
 
-              <Home></Home>
 
-              // {this.props.children}
+              {this.props.children}
 
             </div>
             )

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { StickyContainer, Sticky } from 'react-sticky';
-var Marquee = require('react-marquee');
 
 
 

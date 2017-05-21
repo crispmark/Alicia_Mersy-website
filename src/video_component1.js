@@ -12,7 +12,7 @@ class video_component1 extends Component {
       return (
 
         <div className="video_component1">
-          <video autoPlay="autoPlay">
+          <video autoPlay="autoPlay" loop="loop">
             <source src="https://res.cloudinary.com/www-c-t-l-k-com/video/upload/v1490139070/a1_u3b6oq.mp4" type="video/mp4" />
 
           </video>
