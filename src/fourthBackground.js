@@ -3,7 +3,7 @@ import TypeWriter from 'react-typewriter';
 
 
 
-class fourthBackground extends Component {
+class FourthBackground extends Component {
 
       render() {
 
@@ -49,4 +49,4 @@ class fourthBackground extends Component {
 
 
 
-export default fourthBackground;
+export default FourthBackground;

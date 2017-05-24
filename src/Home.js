@@ -6,11 +6,11 @@ import TypeWriter from 'react-typewriter';
 import FixedComponentsA from "./FixedComponentsA.js"
 import FixedComponents3 from "./FixedComponents3.js"
 import FixedImgs from "./FixedImgs.js"
-import secondBackground from "./secondBackground.js"
-import thirdBackground from "./thirdBackground.js"
-import fourthBackground from "./fourthBackground.js"
-import fifthBackground from "./fifthBackground.js"
-import bioBackground from "./bioBackground.js"
+import SecondBackground from "./SecondBackground.js"
+import ThirdBackground from "./ThirdBackground.js"
+import FourthBackground from "./FourthBackground.js"
+import FifthBackground from "./FifthBackground.js"
+import BioBackground from "./BioBackground.js"
 
 
 
@@ -40,13 +40,21 @@ reset() {
 
 
  componentDidMount(){
-   // ISS stuff goes here
+
+
+
+   const body = document.body;
+
+   const height = Math.max(
+      body.offsetHeight,
+    );
+    console.log("this is the height" , height);
  }
 
 
 
-
 render() {
+
 
 
 
@@ -116,8 +124,6 @@ return (
 
     <div>
 
-      {this.props.children}
-
 
           <FixedImgs />
 
@@ -146,7 +152,7 @@ return (
 
 
 
-          <secondBackground className={"secondBackground"}></secondBackground>
+          <SecondBackground></SecondBackground>
 
             {randomizedArray3.map((ele) =>
               <div key={ele.key}>
@@ -157,7 +163,7 @@ return (
               </div>
             )}
 
-            <thirdBackground></thirdBackground>
+            <ThirdBackground></ThirdBackground>
 
 
 
@@ -171,7 +177,7 @@ return (
             )}
 
 
-            <fourthBackground></fourthBackground>
+            <FourthBackground></FourthBackground>
 
 
             {randomizedArray4.map((ele) =>
@@ -185,12 +191,14 @@ return (
 
             <div>
 
+              <FifthBackground></FifthBackground>
+
+
             </div>
 
-            <fifthBackground></fifthBackground>
 
 
-          <bioBackground></bioBackground>
+          <BioBackground></BioBackground>
 
 
 

@@ -3,7 +3,7 @@ import TypeWriter from 'react-typewriter';
 
 
 
-class bioBackground extends Component {
+class BioBackground extends Component {
 
       render() {
 
@@ -28,4 +28,4 @@ class bioBackground extends Component {
 }
 
 
-export default bioBackground;
+export default BioBackground;

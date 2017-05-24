@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 
-class secondBackground extends Component {
+class SecondBackground extends Component {
 
       render() {
 
@@ -32,4 +32,4 @@ class secondBackground extends Component {
 
 
 
-export default secondBackground;
+export default SecondBackground;
