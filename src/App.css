@@ -357,6 +357,10 @@ video{
   /*border-left: 1px solid white;*/
 }
 
+.bio_rotate{
+  transform: rotate(2deg)
+}
+
 
 .secondBackground{
   background-color: black;
