@@ -6,11 +6,11 @@ import TypeWriter from 'react-typewriter';
 import FixedComponentsA from "./FixedComponentsA.js"
 import FixedComponents3 from "./FixedComponents3.js"
 import FixedImgs from "./FixedImgs.js"
-import secondBackground from "./secondBackground.js"
-import thirdBackground from "./thirdBackground.js"
-import fourthBackground from "./fourthBackground.js"
-import fifthBackground from "./fifthBackground.js"
-import bioBackground from "./bioBackground.js"
+import SecondBackground from "./secondBackground.js"
+import ThirdBackground from "./thirdBackground.js"
+import FourthBackground from "./fourthBackground.js"
+import FifthBackground from "./fifthBackground.js"
+import BioBackground from "./bioBackground.js"
 
 
 
@@ -146,7 +146,7 @@ return (
 
 
 
-          <secondBackground className={"secondBackground"}></secondBackground>
+          <SecondBackground className={"secondBackground"} />
 
             {randomizedArray3.map((ele) =>
               <div key={ele.key}>
@@ -157,7 +157,7 @@ return (
               </div>
             )}
 
-            <thirdBackground></thirdBackground>
+            <ThirdBackground />
 
 
 
@@ -171,7 +171,7 @@ return (
             )}
 
 
-            <fourthBackground></fourthBackground>
+            <FourthBackground />
 
 
             {randomizedArray4.map((ele) =>
@@ -187,10 +187,10 @@ return (
 
             </div>
 
-            <fifthBackground></fifthBackground>
+            <FifthBackground />
 
 
-          <bioBackground></bioBackground>
+          <BioBackground />
 
 
 
