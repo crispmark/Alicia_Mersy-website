@@ -33,29 +33,40 @@ reset() {
     });
  }
 
- getInitialProps(){
+ defaultProps(){
+   return {
+     interval: 1000,
+     callback: null
+   };
+ }
+
+ fetchIssData(){
+
+  fetch("http://api.open-notify.org/iss-now.json")
+ .then(function(response) {
+ 	if (response.status >= 400) {
+ 		throw new Error("Bad response from server");
+ 	}
+ 	return response.json();
+ })
+  .then(result => {
+ 		this.setState({
+ 			issPosition: result.iss_position
+ 		});
+
+ 	})
+ 	.catch(err => {
+ 		console.log(err.stack);
+ 	})
 
  }
 
  componentDidMount(){
-
-   fetch("http://api.open-notify.org/iss-now.json")
-	.then(function(response) {
-		if (response.status >= 400) {
-			throw new Error("Bad response from server");
-		}
-		return response.json();
-	})
-  .then(result => {
-			this.setState({
-				issPosition: result.iss_position
-			});
-
-		})
-		.catch(err => {
-			console.log(err.stack);
-		})
+   setInterval(this.fetchIssData(), 3000);
+   console.log("here gee" , 3000);
  }
+
+
 
 render() {
 
@@ -130,6 +141,8 @@ return (
     <div>
 
       <h1 className="data_test">{this.state.issPosition.latitude}</h1>
+        <h1 className="data_test_2">{this.state.issPosition.longitude}</h1>
+
 
       <img  id="sticky_1" src={"https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_fill,w_1900/v1490156377/cosmic_spheres_c_tdarne.jpg"} />
 

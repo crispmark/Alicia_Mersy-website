@@ -5,8 +5,34 @@ body{
 
 
 .data_test{
-  position: fixed;
-  color: white;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  color: black;
+    font-size: 10vw;
+    text-align: center;
+    text-shadow: 0 0 70px #404040;
+    -moz-animation: secondBackground_p 10s infinite;
+    -webkit-animation: secondBackground_p 10s infinite;
+  margin: 0;
+}
+
+.data_test_2{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  color: black;
+    font-size: 10vw;
+    text-align: center;
+    text-shadow: 0 0 70px #404040;
+    -moz-animation: secondBackground_p 10s infinite;
+    -webkit-animation: secondBackground_p 10s infinite;
+  margin: 0;
+  top: 8vw;
 }
 
 
