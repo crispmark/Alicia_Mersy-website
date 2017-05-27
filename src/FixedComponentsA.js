@@ -19,14 +19,14 @@ class FixedComponentsA extends Component {
       			</p>
 
             <div>
-      			<img style={smallImg} src={"https://res.cloudinary.com/www-c-t-l-k-com/image/upload/v1486235671/a6_stxbgk.png"} />
-      			<img src={"https://res.cloudinary.com/www-c-t-l-k-com/image/upload/v1486235680/a7_p5wr54.jpg"} />
+      			<img style={smallImg} src={"https://res.cloudinary.com/www-c-t-l-k-com/image/upload/v1486235671/a6_stxbgk.png"} role="presentation"/>
+      			<img src={"https://res.cloudinary.com/www-c-t-l-k-com/image/upload/v1486235680/a7_p5wr54.jpg"} role="presentation"/>
             </div>
 
 
 
           </div>
-        
+
           </div>
           );
 

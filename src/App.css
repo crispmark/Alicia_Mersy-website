@@ -4,6 +4,13 @@ body{
 }
 
 
+#sticky_1{
+  width: 30vw;
+  position: fixed;
+  visibility: hidden;
+  z-index: 10000000;
+}
+
 .typeWritter{
   font-size: 6.5vw;
   color: white;

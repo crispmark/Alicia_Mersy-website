@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import "./App.css";
-var Marquee = require('react-marquee');
+// var Marquee = require('react-marquee');
 
 
 

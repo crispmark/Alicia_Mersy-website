@@ -27,7 +27,7 @@ class FourthBackground extends Component {
               <img className="fourthBackground_third_img" src={"https://res.cloudinary.com/www-c-t-l-k-com/image/upload/v1493767292/magnetics_tn5nyo.png"} />
 
                 <div className="fourthBackground_fixed1">
-                  <p><TypeWriter maxDelay={100} typing={1}>_There will be a contour make up tutorial video, a few internet cafe prints, a heat dish parabolic electric heater, Vaseline, Sufism rituals, cable ties, warped 3d baby blue metallic textures and Lord concentrated musk.</TypeWriter></p>
+                  <p><TypeWriter typing={1}>_There will be a contour make up tutorial video, a few internet cafe prints, a heat dish parabolic electric heater, Vaseline, Sufism rituals, cable ties, warped 3d baby blue metallic textures and Lord concentrated musk.</TypeWriter></p>
                 </div>
 
 

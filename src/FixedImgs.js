@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Router, Route, Link } from 'react-router';
-import { StickyContainer, Sticky } from 'react-sticky';
+// import { Router, Route, Link } from 'react-router';
+// import { StickyContainer, Sticky } from 'react-sticky';
 
 
 class FixedImgs extends Component {

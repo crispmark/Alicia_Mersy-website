@@ -22,7 +22,7 @@ class ThirdBackground extends Component {
           <img className="thirdBackground_seventh_img" src={"https://res.cloudinary.com/www-c-t-l-k-com/image/upload/v1493767288/diamond_hvxfb7.png"} />
 
           <div className="thirdBackground_fixed1">
-            <p><TypeWriter maxDelay={100} typing={1}>_Leave space in your day to pray for the poor, to meditate on empathy. get rid of yourself
+            <p><TypeWriter>_Leave space in your day to pray for the poor, to meditate on empathy. get rid of yourself
               “Breathe 7 times/ when Inhaling take in all the positive energy (PURE) When exhaling take all negative out (TOXIC)”</TypeWriter></p>
 
           </div>

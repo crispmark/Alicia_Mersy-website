@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StickyContainer, Sticky } from 'react-sticky';
+// import { StickyContainer, Sticky } from 'react-sticky';
 
 
 
@@ -15,7 +15,7 @@ class FixedComponents3 extends Component {
 
             <div className="FixedComponents3ImgContainer">
               <div className="FixedComponents3Img">
-                  <img src={"https://res.cloudinary.com/www-c-t-l-k-com/image/upload/v1487026141/background_22_qewjd2.jpg"}/>
+                  <img src={"https://res.cloudinary.com/www-c-t-l-k-com/image/upload/v1487026141/background_22_qewjd2.jpg"} role="presentation"/>
               </div>
             </div>
 

@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 import "./App.css";
 import HorizontalMarquee from "./HorizontalMarquee.js"
-import Watch from "./ScrollMonitor.js"
-import TypeWriter from 'react-typewriter';
-import FixedComponentsA from "./FixedComponentsA.js"
-import FixedComponents3 from "./FixedComponents3.js"
 import FixedImgs from "./FixedImgs.js"
 import SecondBackground from "./SecondBackground.js"
 import ThirdBackground from "./ThirdBackground.js"
@@ -38,25 +34,9 @@ reset() {
 
  }
 
-
- componentDidMount(){
-
-
-
-   const body = document.body;
-
-   const height = Math.max(
-      body.offsetHeight,
-    );
-    console.log("this is the height" , height);
- }
-
-
-
 render() {
 
-
-
+        console.log("here" , document.documentElement.scrollTop);
 
           let imgsToDisplay1 = [
             { key: 1, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_fill,w_1900/v1487026121/background_1_vqjmfz.jpg"},
@@ -76,7 +56,7 @@ render() {
             { key: 10, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_fill,w_1900/v1487026140/background_8_lo0vze.jpg"},
             { key: 11, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_fill,w_1900/v1487026130/background_9_bezdbv.jpg"},
             { key: 12, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_fill,w_1900/v1487026133/background_10_cnai6t.jpg"},
-            { key: 13, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/v1491682211/Alicia_Mersy/IMG_4888.jpg"}
+            { key: 13, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/v1491682211/Alicia_Mersy/IMG_4888.jpg"},
 
           ];
 
@@ -85,7 +65,7 @@ render() {
             { key: 16, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_fill,w_1900/v1491681972/Alicia_Mersy/DSC06380.jpg"},
             { key: 17, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_fill,w_1900/v1491681724/Alicia_Mersy/DSC06292.jpg"},
             { key: 18, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_fill,w_1900/v1491681919/Alicia_Mersy/DSC09039.jpg"},
-            { key: 19, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_fill,w_1900/v1491681550/Alicia_Mersy/CNV000013.jpg"}
+            { key: 19, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_fill,w_1900/v1491681550/Alicia_Mersy/CNV000013.jpg"},
 
           ]
 
@@ -95,7 +75,7 @@ render() {
             { key: 23, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_fill,w_1900/v1491682351/Alicia_Mersy/IMG_9939.jpg"},
             { key: 24, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_fill,w_1900/v1491681617/Alicia_Mersy/DSC02510.jpg"},
             { key: 25, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_fill,w_1900/v1491681765/Alicia_Mersy/DSC02701.jpg"},
-            { key: 26, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_fill,w_1900/v1491681856/Alicia_Mersy/DSC08759.jpg"}
+            { key: 26, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_fill,w_1900/v1491681856/Alicia_Mersy/DSC08759.jpg"},
 
           ]
 
@@ -114,15 +94,19 @@ render() {
           }
 
           var randomizedArray1 = randomize(imgsToDisplay1);
-          var randomizedArray2 = randomize(imgsToDisplay2);
           var randomizedArray3 = randomize(imgsToDisplay3);
           var randomizedArray4 = randomize(imgsToDisplay4);
+          var randomizedArray2 = randomize(imgsToDisplay2);
+
 
 
 return (
 
 
     <div>
+
+
+      <img  id="sticky_1" src={"https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_fill,w_1900/v1490156377/cosmic_spheres_c_tdarne.jpg"} />
 
 
           <FixedImgs />
@@ -154,7 +138,7 @@ return (
 
           <SecondBackground></SecondBackground>
 
-            {randomizedArray3.map((ele) =>
+            {randomizedArray2.map((ele) =>
               <div key={ele.key}>
               <HorizontalMarquee></HorizontalMarquee>
               <div className="photo-content">
@@ -199,11 +183,6 @@ return (
 
 
           <BioBackground></BioBackground>
-
-
-
-
-
 
 
         </div>
