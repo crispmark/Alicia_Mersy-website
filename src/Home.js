@@ -7,8 +7,9 @@ import ThirdBackground from "./ThirdBackground.js"
 import FourthBackground from "./FourthBackground.js"
 import FifthBackground from "./FifthBackground.js"
 import BioBackground from "./BioBackground.js"
-
-
+import axios from 'axios';
+require('es6-promise').polyfill();
+require('isomorphic-fetch');
 
 
 class Home extends Component {
@@ -19,8 +20,10 @@ class Home extends Component {
 
 
    this.state = {
-     visibleChars: 0
-   };
+     visibleChars: 0,
+     issPosition: []
+
+    };
 
 }
 
@@ -34,9 +37,30 @@ reset() {
 
  }
 
+ componentDidMount(){
+
+   fetch("http://api.open-notify.org/iss-now.json")
+	.then(function(response) {
+		if (response.status >= 400) {
+			throw new Error("Bad response from server");
+		}
+		return response.json();
+	})
+  .then(result => {
+			this.setState({
+				issPosition: result.iss_position
+			});
+
+		})
+		.catch(err => {
+			console.log(err.stack);
+		})
+ }
+
 render() {
 
-        console.log("here" , document.documentElement.scrollTop);
+
+  console.log("here" , this.state.issPosition);
 
           let imgsToDisplay1 = [
             { key: 1, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_fill,w_1900/v1487026121/background_1_vqjmfz.jpg"},
@@ -105,6 +129,7 @@ return (
 
     <div>
 
+      <h1 className="data_test">{this.state.issPosition.latitude}</h1>
 
       <img  id="sticky_1" src={"https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_fill,w_1900/v1490156377/cosmic_spheres_c_tdarne.jpg"} />
 
@@ -136,7 +161,7 @@ return (
 
 
 
-          <SecondBackground></SecondBackground>
+            <SecondBackground></SecondBackground>
 
             {randomizedArray2.map((ele) =>
               <div key={ele.key}>

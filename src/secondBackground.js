@@ -5,9 +5,12 @@ class SecondBackground extends Component {
 
       render() {
 
+
       return (
 
+
         <div className="secondBackground">
+
 
           <p>_“If you are irritated by every rub, how will your mirror be polished?” Sufi Master</p>
           <img className="secondBackground_first_img" src={"https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_fill,w_1900/v1490142959/tumblr_nkf9ebZzTV1tvhjyno1_1280_l1y4r4.jpg"} />

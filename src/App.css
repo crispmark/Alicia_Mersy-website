@@ -4,6 +4,12 @@ body{
 }
 
 
+.data_test{
+  position: fixed;
+  color: white;
+}
+
+
 #sticky_1{
   width: 30vw;
   position: fixed;
