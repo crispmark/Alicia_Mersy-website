@@ -32,7 +32,7 @@ class ThirdBackground extends Component {
 
           <div className="video_container first_video">
             <video autoPlay="autoPlay" muted loop>
-              <source src="https://res.cloudinary.com/www-c-t-l-k-com/video/upload/v1490139070/a1_u3b6oq.mp4" type="video/mp4" />
+              <source src="http://res.cloudinary.com/www-c-t-l-k-com/video/upload/v1490150912/AMAN_AMAN_WINE_SLOW_m1i7az.mp4" type="video/mp4" />
             </video>
         </div>
 

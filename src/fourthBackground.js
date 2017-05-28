@@ -5,6 +5,19 @@ import TypeWriter from 'react-typewriter';
 
 class FourthBackground extends Component {
 
+  constructor(props) {
+    super(props);
+
+
+    this.state = {
+      muted: "muted",
+      issPosition: []
+
+     };
+
+ }
+
+
       render() {
 
       return (

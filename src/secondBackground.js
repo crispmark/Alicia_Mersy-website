@@ -3,8 +3,38 @@ import React, { Component } from 'react';
 
 class SecondBackground extends Component {
 
-      render() {
 
+  constructor(props) {
+    super(props);
+
+
+      this.state = {
+        muted: "muted"
+      };
+
+      console.log("this is the state" , this.state.muted);
+
+
+    }
+
+    handleMouseEnter(){
+      alert("handleMouseEnter")
+      alert(this.state.muted)
+
+      this.setState({
+  			muted: ""
+  		}).bind(this);
+
+    }
+
+    handleMouseLeave(){
+      alert("handleMouseLeave")
+        this.setState({
+          muted: "muted"
+        }).bind(this);
+    }
+
+      render() {
 
       return (
 
@@ -21,7 +51,9 @@ class SecondBackground extends Component {
           </div>
 
           <div className="video_container">
-            <video autoPlay="autoPlay" muted loop>
+            <video onMouseEnter={this.handleMouseEnter}
+                  onMouseLeave={this.handleMouseLeave}
+                  autoPlay="autoPlay" muted={this.state.muted} loop>
               <source src="https://res.cloudinary.com/www-c-t-l-k-com/video/upload/v1490139070/a1_u3b6oq.mp4" type="video/mp4" />
             </video>
         </div>

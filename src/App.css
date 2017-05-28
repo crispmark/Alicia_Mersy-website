@@ -4,6 +4,20 @@ body{
 }
 
 
+#scrollTest{
+  position: absolute;
+  top: 300vw;
+  color: black;
+  font-size: 10vw;
+}
+
+
+.fixed_test{
+  position: absolute;
+  background-color: white;
+  top: 40vw;
+}
+
 .data_test{
   position: absolute;
   display: flex;
@@ -81,16 +95,20 @@ body{
 
 
 .verticalMarquee2 marquee{
-      position: absolute;
-      top: 10vw;
-      width: 22vw;
-      background-color: black;
-      overflow: hidden;
-      white-space: nowrap;
-      font-weight: lighter;
-      font-weight: lighter;
-      transform: rotate(90deg);
-      transform-origin: top right;
+  position: absolute;
+top: 10vw;
+width: 52vw;
+background-color: transparent;
+overflow: hidden;
+white-space: nowrap;
+font-weight: lighter;
+font-weight: lighter;
+-webkit-transform: rotate(90deg);
+-ms-transform: rotate(90deg);
+transform: rotate(90deg);
+-webkit-transform-origin: top right;
+-ms-transform-origin: top right;
+transform-origin: top right;
 
 }
 

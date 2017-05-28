@@ -10,68 +10,79 @@ import BioBackground from "./BioBackground.js"
 import axios from 'axios';
 require('es6-promise').polyfill();
 require('isomorphic-fetch');
+import { Watch } from 'scrollmonitor-react';
+var inViewport = require('in-viewport');
+
+// var elementToWatch = document.getElementById('scrollTest');
+//
+// var trueOrFalseWatcher = inViewport(elementToWatch); // returns `true` or `false`
+// console.log("this is " , trueOrFalseWatcher);
+
+
+
+
+
+
 
 
 class Home extends Component {
 
 
   constructor(props) {
-   super(props);
+    super(props);
 
 
-   this.state = {
-     visibleChars: 0,
-     issPosition: []
+    this.state = {
+      visibleChars: 0,
+      issPosition: []
 
+     };
+
+ }
+
+ reset() {
+     this.setState({
+       visibleChars: 0
+     });
+  }
+
+  defaultProps(){
+    return {
+      interval: 1000,
+      callback: null
     };
+  }
 
-}
+  fetchIssData(){
 
-reset() {
-    this.setState({
-      visibleChars: 0
-    });
- }
+   fetch("http://api.open-notify.org/iss-now.json")
+  .then(function(response) {
+  	if (response.status >= 400) {
+  		throw new Error("Bad response from server");
+  	}
+  	return response.json();
+  })
+   .then(result => {
+  		this.setState({
+  			issPosition: result.iss_position
+  		});
 
- defaultProps(){
-   return {
-     interval: 1000,
-     callback: null
-   };
- }
+  	})
+  	.catch(err => {
+  		console.log(err.stack);
+  	})
 
- fetchIssData(){
+  }
 
-  fetch("http://api.open-notify.org/iss-now.json")
- .then(function(response) {
- 	if (response.status >= 400) {
- 		throw new Error("Bad response from server");
- 	}
- 	return response.json();
- })
-  .then(result => {
- 		this.setState({
- 			issPosition: result.iss_position
- 		});
-
- 	})
- 	.catch(err => {
- 		console.log(err.stack);
- 	})
-
- }
-
- componentDidMount(){
-   setInterval(this.fetchIssData(), 3000);
-   console.log("here gee" , 3000);
- }
-
+  componentDidMount(){
+    setInterval(this.fetchIssData(), 3000);
+  }
 
 
 render() {
 
 
-  console.log("here" , this.state.issPosition);
+
 
           let imgsToDisplay1 = [
             { key: 1, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_fill,w_1900/v1487026121/background_1_vqjmfz.jpg"},
@@ -141,10 +152,8 @@ return (
     <div>
 
       <h1 className="data_test">{this.state.issPosition.latitude}</h1>
-        <h1 className="data_test_2">{this.state.issPosition.longitude}</h1>
+    <h1 className="data_test_2">{this.state.issPosition.longitude}</h1>
 
-
-      <img  id="sticky_1" src={"https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_fill,w_1900/v1490156377/cosmic_spheres_c_tdarne.jpg"} />
 
 
           <FixedImgs />
