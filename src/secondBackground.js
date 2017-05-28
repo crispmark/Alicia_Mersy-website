@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 
-class SecondBackground extends Component {
+class SecondBackground extends React.Component {
 
 
   constructor(props) {
@@ -12,30 +12,31 @@ class SecondBackground extends Component {
         muted: "muted"
       };
 
-      console.log("this is the state" , this.state.muted);
 
+      this.handleMouseLeave = this.handleMouseLeave.bind(this);
+      this.handleMouseEnter = this.handleMouseEnter.bind(this);
 
     }
 
     handleMouseEnter(){
-      alert("handleMouseEnter")
-      alert(this.state.muted)
+      console.log("handleMouseEnter");
+      console.log("handleMouseEnter");
 
       this.setState({
   			muted: ""
-  		}).bind(this);
+  		})
 
     }
 
     handleMouseLeave(){
-      alert("handleMouseLeave")
+      console.log("handleMouseLeave");
         this.setState({
           muted: "muted"
-        }).bind(this);
+        })
     }
 
       render() {
-
+      console.log("this is the state" , this.state.muted);
       return (
 
 
