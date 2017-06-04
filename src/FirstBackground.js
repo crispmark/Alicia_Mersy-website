@@ -23,7 +23,7 @@ return (
               {
                 ({ isSticky, wasSticky, style, distanceFromTop, distanceFromBottom, calculatedHeight }) => {
                   return (
-                    <div>
+                    <div style={{ ...style}}>
                       <img className="sticky_img" src="https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_scale,w_1900/v1487026129/background_11_x5ob78.jpg" />
                     </div>
                   )
