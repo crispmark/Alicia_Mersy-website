@@ -12,6 +12,10 @@ body{
 }
 
 
+.sticky_img{
+  width: 20vw;
+}
+
 .fixed_test{
   position: absolute;
   background-color: white;
