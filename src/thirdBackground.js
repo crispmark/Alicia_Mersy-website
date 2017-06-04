@@ -5,6 +5,36 @@ import TypeWriter from 'react-typewriter';
 
 class ThirdBackground extends Component {
 
+
+  constructor(props) {
+    super(props);
+
+
+      this.state = {
+        muted: "muted"
+      };
+
+
+      this.handleMouseLeave = this.handleMouseLeave.bind(this);
+      this.handleMouseEnter = this.handleMouseEnter.bind(this);
+
+    }
+
+    handleMouseEnter(){
+
+      this.setState({
+        muted: ""
+      })
+
+    }
+
+    handleMouseLeave(){
+        this.setState({
+          muted: "muted"
+        })
+    }
+
+
       render() {
 
       return (
@@ -31,8 +61,10 @@ class ThirdBackground extends Component {
           </div>
 
           <div className="video_container first_video">
-            <video autoPlay="autoPlay" muted loop>
-              <source src="http://res.cloudinary.com/www-c-t-l-k-com/video/upload/v1490150912/AMAN_AMAN_WINE_SLOW_m1i7az.mp4" type="video/mp4" />
+            <video onMouseEnter={this.handleMouseEnter}
+                  onMouseLeave={this.handleMouseLeave}
+                  autoPlay="autoPlay" muted={this.state.muted} loop>
+                <source src="http://res.cloudinary.com/www-c-t-l-k-com/video/upload/v1490150912/AMAN_AMAN_WINE_SLOW_m1i7az.mp4" type="video/mp4" />
             </video>
         </div>
 

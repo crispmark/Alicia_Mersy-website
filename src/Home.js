@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import "./App.css";
 import HorizontalMarquee from "./HorizontalMarquee.js"
-import FixedImgs from "./FixedImgs.js"
 import SecondBackground from "./SecondBackground.js"
 import ThirdBackground from "./ThirdBackground.js"
 import FourthBackground from "./FourthBackground.js"
@@ -12,6 +11,8 @@ require('es6-promise').polyfill();
 require('isomorphic-fetch');
 import { Watch } from 'scrollmonitor-react';
 var inViewport = require('in-viewport');
+import FirstBackground from "./FirstBackground.js"
+
 
 // var elementToWatch = document.getElementById('scrollTest');
 //
@@ -75,8 +76,10 @@ class Home extends Component {
   }
 
   componentDidMount(){
-    setInterval(this.fetchIssData(), 3000);
+    this.fetchIssData();
   }
+
+
 
 
 render() {
@@ -85,43 +88,42 @@ render() {
 
 
           let imgsToDisplay1 = [
-            { key: 1, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_fill,w_1900/v1487026121/background_1_vqjmfz.jpg"},
-            { key: 2, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_fill,w_1900/v1491682476/Alicia_Mersy/waterfall-hd-1366x768.jpg"},
-            { key: 3, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_fill,w_1900/v1487026123/background_3_kxkmgn.jpg"},
-            { key: 4, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_fill,w_1900/v1487026129/background_4_shheba.jpg"},
-            { key: 5, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_fill,w_1900/v1487026126/background_5_r34mvo.jpg"},
-            { key: 6, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_fill,w_1900/v1491681778/Alicia_Mersy/DSC08742.jpg"},
-            { key: 7, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_fill,w_1900/v1491681958/Alicia_Mersy/IMG_3093.jpg"},
+            { key: 2, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_scale,w_1900/v1491682476/Alicia_Mersy/waterfall-hd-1366x768.jpg"},
+            { key: 3, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_scale,w_1900/v1487026123/background_3_kxkmgn.jpg"},
+            { key: 4, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_scale,w_1900/v1487026129/background_4_shheba.jpg"},
+            { key: 5, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_scale,w_1900/v1487026126/background_5_r34mvo.jpg"},
+            { key: 6, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_scale,w_1900/v1491681778/Alicia_Mersy/DSC08742.jpg"},
+            { key: 7, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_scale,w_1900/v1491681958/Alicia_Mersy/IMG_3093.jpg"},
 
 
           ];
 
           let imgsToDisplay2 = [
-            { key: 8, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_fill,w_1900/v1487026125/background_6_fmmov8.jpg"},
-            { key: 9, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_fill,w_1900/v1487026129/background_7_befcpo.jpg"},
-            { key: 10, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_fill,w_1900/v1487026140/background_8_lo0vze.jpg"},
-            { key: 11, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_fill,w_1900/v1487026130/background_9_bezdbv.jpg"},
-            { key: 12, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_fill,w_1900/v1487026133/background_10_cnai6t.jpg"},
+            { key: 8, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_scale,w_1900/v1487026125/background_6_fmmov8.jpg"},
+            { key: 9, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_scale,w_1900/v1487026129/background_7_befcpo.jpg"},
+            { key: 10, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_scale,w_1900/v1487026140/background_8_lo0vze.jpg"},
+            { key: 11, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_scale,w_1900/v1487026130/background_9_bezdbv.jpg"},
+            { key: 12, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_scale,w_1900/v1487026133/background_10_cnai6t.jpg"},
             { key: 13, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/v1491682211/Alicia_Mersy/IMG_4888.jpg"},
 
           ];
 
           let imgsToDisplay3 = [
-            { key: 15, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_fill,w_1900/v1487026129/background_11_x5ob78.jpg"},
-            { key: 16, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_fill,w_1900/v1491681972/Alicia_Mersy/DSC06380.jpg"},
-            { key: 17, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_fill,w_1900/v1491681724/Alicia_Mersy/DSC06292.jpg"},
-            { key: 18, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_fill,w_1900/v1491681919/Alicia_Mersy/DSC09039.jpg"},
-            { key: 19, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_fill,w_1900/v1491681550/Alicia_Mersy/CNV000013.jpg"},
+            { key: 15, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_scale,w_1900/v1487026129/background_11_x5ob78.jpg"},
+            { key: 16, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_scale,w_1900/v1491681972/Alicia_Mersy/DSC06380.jpg"},
+            { key: 17, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_scale,w_1900/v1491681724/Alicia_Mersy/DSC06292.jpg"},
+            { key: 18, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_scale,w_1900/v1491681919/Alicia_Mersy/DSC09039.jpg"},
+            { key: 19, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_scale,w_1900/v1491681550/Alicia_Mersy/CNV000013.jpg"},
 
           ]
 
           let imgsToDisplay4 = [
-            { key: 20, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_fill,w_1900/v1491681753/Alicia_Mersy/IMG_2062.jpg"},
-            { key: 22, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_fill,w_1900/v1491681853/Alicia_Mersy/DSC09024.jpg"},
-            { key: 23, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_fill,w_1900/v1491682351/Alicia_Mersy/IMG_9939.jpg"},
-            { key: 24, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_fill,w_1900/v1491681617/Alicia_Mersy/DSC02510.jpg"},
-            { key: 25, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_fill,w_1900/v1491681765/Alicia_Mersy/DSC02701.jpg"},
-            { key: 26, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_fill,w_1900/v1491681856/Alicia_Mersy/DSC08759.jpg"},
+            { key: 20, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_scale,w_1900/v1491681753/Alicia_Mersy/IMG_2062.jpg"},
+            { key: 22, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_scale,w_1900/v1491681853/Alicia_Mersy/DSC09024.jpg"},
+            { key: 23, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_scale,w_1900/v1491682351/Alicia_Mersy/IMG_9939.jpg"},
+            { key: 24, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_scale,w_1900/v1491681617/Alicia_Mersy/DSC02510.jpg"},
+            { key: 25, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_scale,w_1900/v1491681765/Alicia_Mersy/DSC02701.jpg"},
+            { key: 26, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_scale,w_1900/v1491681856/Alicia_Mersy/DSC08759.jpg"},
 
           ]
 
@@ -148,35 +150,17 @@ render() {
 
 return (
 
-
-    <div>
-
-      <h1 className="data_test">{this.state.issPosition.latitude}</h1>
-    <h1 className="data_test_2">{this.state.issPosition.longitude}</h1>
+      <div>
 
 
+        <FirstBackground></FirstBackground>
 
-          <FixedImgs />
-
-            <div className="verticalMarquee1">
-
-                <marquee><p>Knowledge of self is in your DNA - A Queen</p></marquee>
-
-            </div>
-
-          <div className="firstBackground">
-
-            <img src={"https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_fill,w_1900/v1490156377/cosmic_spheres_c_tdarne.jpg"} />
-
-          </div>
 
           {randomizedArray1.map((ele) =>
             <div key={ele.key}>
             <HorizontalMarquee></HorizontalMarquee>
             <div className="photo-content">
-              <div>
                 <img src={ele.source} />
-              </div>
             </div>
             </div>
           )}

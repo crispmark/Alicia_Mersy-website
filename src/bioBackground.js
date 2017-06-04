@@ -15,8 +15,6 @@ class BioBackground extends Component {
 
               <p> Alicia Mersy is an artist and art Director originally form Montreal now working in New York. </p>
               <p className="bio_rotate"> In 2013 she graduated from an MA Fine Art at Central Saint Martins. </p>
-              <p>  She is the co-funder of Malaxa - an art office - who’s work explores decolonial aesthetics and political resistance through digital culture, art, documentary and fashion.
-              </p>
 
 
         </div>

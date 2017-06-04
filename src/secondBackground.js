@@ -19,8 +19,6 @@ class SecondBackground extends React.Component {
     }
 
     handleMouseEnter(){
-      console.log("handleMouseEnter");
-      console.log("handleMouseEnter");
 
       this.setState({
   			muted: ""
@@ -29,14 +27,12 @@ class SecondBackground extends React.Component {
     }
 
     handleMouseLeave(){
-      console.log("handleMouseLeave");
         this.setState({
           muted: "muted"
         })
     }
 
       render() {
-      console.log("this is the state" , this.state.muted);
       return (
 
 

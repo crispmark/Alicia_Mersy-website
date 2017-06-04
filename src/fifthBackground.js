@@ -4,6 +4,33 @@ import React, { Component } from 'react';
 
 class FifthBackground extends Component {
 
+  constructor(props) {
+    super(props);
+
+
+      this.state = {
+        muted: "muted"
+      };
+
+
+      this.handleMouseLeave = this.handleMouseLeave.bind(this);
+      this.handleMouseEnter = this.handleMouseEnter.bind(this);
+
+    }
+
+    handleMouseEnter(){
+      this.setState({
+        muted: ""
+      })
+
+    }
+
+    handleMouseLeave(){
+        this.setState({
+          muted: "muted"
+        })
+    }
+
       render() {
 
       return (
@@ -27,7 +54,9 @@ class FifthBackground extends Component {
                         </div>
 
                         <div className="video_container second_video">
-                          <video autoPlay="autoPlay" muted loop>
+                          <video onMouseEnter={this.handleMouseEnter}
+                                onMouseLeave={this.handleMouseLeave}
+                                autoPlay="autoPlay" muted={this.state.muted} loop>
                             <source src="https://res.cloudinary.com/www-c-t-l-k-com/video/upload/v1494547259/QUR_AN_OVER_THE_PRICE_IS_RIGHT_READYMADE_FLATBUSH_sytgpz.mp4" type="video/mp4" />
                           </video>
                       </div>

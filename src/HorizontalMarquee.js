@@ -20,7 +20,7 @@ class HorizontalMarquee extends Component {
           { key: 9, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_scale,h_400/v1491682284/Alicia_Mersy/IMG_7298.jpg"},
           { key: 11, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_scale,h_400/v1487353470/3d-Backgrounds-1080p_dtvhsm.jpg"},
           { key: 12, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_scale,h_400/v1487353471/DSC06039_fxqw3y.jpg"},
-          { key: 13, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_scale,h_400/v1487353470/5889983035_7f1e3199e5_b_b2yf9g.jpg"},
+          { key: 13, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_fill,h_400/v1487353470/5889983035_7f1e3199e5_b_b2yf9g.jpg"},
           { key: 14, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_scale,h_400/v1487353470/cosmic_spheres_c_iqzoys.jpg"},
           { key: 15, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_scale,h_400/v1491682262/Alicia_Mersy/IMG_6199.jpg"},
           { key: 16, source: "https://res.cloudinary.com/www-c-t-l-k-com/image/upload/c_scale,h_400/v1487098399/IMG_4633_mulaeh.jpg"},

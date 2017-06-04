@@ -9,13 +9,28 @@ class FourthBackground extends Component {
     super(props);
 
 
-    this.state = {
-      muted: "muted",
-      issPosition: []
+      this.state = {
+        muted: "muted"
+      };
 
-     };
 
- }
+      this.handleMouseLeave = this.handleMouseLeave.bind(this);
+      this.handleMouseEnter = this.handleMouseEnter.bind(this);
+
+    }
+
+    handleMouseEnter(){
+      this.setState({
+        muted: ""
+      })
+
+    }
+
+    handleMouseLeave(){
+        this.setState({
+          muted: "muted"
+        })
+    }
 
 
       render() {
@@ -45,10 +60,13 @@ class FourthBackground extends Component {
 
 
                 <div className="video_container second_video">
-                  <video autoPlay="autoPlay" muted loop>
-                    <source src="https://res.cloudinary.com/www-c-t-l-k-com/video/upload/v1490150912/AMAN_AMAN_WINE_SLOW_m1i7az.mp4" type="video/mp4" />
-                  </video>
-              </div>
+                    <video onMouseEnter={this.handleMouseEnter}
+                          onMouseLeave={this.handleMouseLeave}
+                          autoPlay="autoPlay" muted={this.state.muted} loop>
+                          <source src="https://res.cloudinary.com/www-c-t-l-k-com/video/upload/v1490150912/AMAN_AMAN_WINE_SLOW_m1i7az.mp4" type="video/mp4" />
+                    </video>
+            </div>
+
 
 
 
